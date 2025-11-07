@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang=	"ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نصائح لجوء وسفر</title>
+<style>
+  body {
+   font-family: 'Changa', sans-serif;
+    background-image: linear-gradient(rgba(3,10,18,0.35), rgba(3,10,18,0.35)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+  }
+
+  header {
+  text-align: center;
+    padding: 15px;
+    font-size: 1.2em;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    margin: 0 7px;
+}
+
+
+  section {
+  background: rgba(0,0,0,0.5);
+  margin: 6px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+  font-size: 1em; 
+}
+
+
+  h2 {
+    color: gold;
+    font-size: 1.2em;
+  }
+
+  button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+
+  button:hover {
+    background: #0056b3;
+  }
+
+  ul {
+    line-height: 1.9;
+  }
+
+  a {
+    color: #66ccff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 10px;
+    color: #ccc;
+  }
+
+  .social {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .social img {
+    width: 28px;
+    vertical-align: middle;
+    margin-left: 8px;
+  }
+/* تنسيق العنوان والعلم */
+.detail-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* يجعل المسافة بين العنوان والعلم */
+  flex-direction: row-reverse;    /* يبدل الاتجاه ليصبح العلم على اليسار */
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+/* شكل العلم */
+.flag-circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 2px solid rgba(255,255,255,0.3);
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+  animation: flagShow 0.8s ease forwards;
+  opacity: 0;
+  transform: scale(0.8) rotate(-30deg);
+float: left;
+ margin-left: 1px;
+ margin-top: -30px;
+pointer-events: none;
+
+
+
+}
+
+.flag-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* حركة لطيفة عند الظهور */
+@keyframes flagShow {
+  0% { opacity: 0; transform: scale(0.8) rotate(-30deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+
+/* 🟡 عنوان الهيدر */
+.header-title {
+  color: gold;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+}
+
+/* 🎯 الأيقونات الجانبية */
+.side-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.side-icons a img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  padding: -1px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.side-icons a img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px gold;
+}
+
+
+  .side-icons a img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .header-title {
+    font-size: 1em;
+  }
+
+/* ✨ تلاشي تدريجي عند الاقتراب من الهيدر */
+section {
+ transition: none;
+
+}
+/* يجعل بداية الأقسام بعد الهيدر مباشرة */
+body {
+  padding-top: 5px; /* عدّل الرقم حسب ارتفاع الهيدر */
+}
+
+}
+
+.cases-section h2 {
+  color: gold;
+  margin-bottom: 9px;
+}
+
+.cases-section h3 {
+  color: #ffd700;
+  font-size: 1.1em;
+}
+
+.cases-section button {
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: background 0.3s ease;
+
+
+}
+
+.cases-section button:hover {
+  background: #0056b3;
+}
+
+.details-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 9px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+<style>
+.contact-section {
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px;
+  text-align: right;
+  color: #fff;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 65%;
+  padding: 30px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.contact-section button {
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-section button:hover {
+  background: #0056b3;
+}
+
+</style>
+
+<script>
+function toggle(id) {
+  const box = document.getElementById(id);
+  box.style.display = (box.style.display === "none" || box.style.display === "") ? "block" : "none";
+}
+</script>
+<script>
+  function toggle(id) {
+    // إغلاق جميع الصناديق المفتوحة أولاً
+    const allDetails = document.querySelectorAll('.details-box');
+    allDetails.forEach(detail => {
+      if (detail.id !== id) {
+        detail.style.display = 'none';
+      }
+    });
+
+    // فتح أو إغلاق القسم المطلوب فقط
+    const target = document.getElementById(id);
+    target.style.display = (target.style.display === 'none' || target.style.display === '') 
+      ? 'block' 
+      : 'none';
+  }
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+<div style="font-family:'Amiri', serif; font-size:15px; line-height:1.6;">
+</head>
+<body>
+
+<header>
+  <!-- ✅ أيقونات اليمين -->
+  <div class="side-icons">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.appcreator24.com/app3799163-uzey92" target="_blank" title="شارك على فيسبوك">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="فيسبوك">
+    </a>
+    <a href="https://api.whatsapp.com/send?text=https://www.appcreator24.com/app3799163-uzey92" target="_blank" title="شارك على واتساب">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="واتساب">
+    </a>
+  </div>
+
+  <!-- ✨ العنوان -->
+  <div class="header-title">نصائح لجوء وسفر حول العالم</div>
+
+  <!-- ✅ أيقونات اليسار -->
+  <div class="side-icons">
+    <a href="https://t.me/share/url?url=https://www.appcreator24.com/app3799163-uzey92&text=شارك%20هذا%20الموقع" target="_blank" title="شارك على تيليجرام">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png"تليجرام">
+    </a>
+    <a href="mailto:?subject=نصائح لجوء وسفر&body=اطلع على هذا الرابط: https://www.appcreator24.com/app3799163-uzey92" title="مشاركة عبر البريد">
+      <img src="https://downlody.com/wp-content/uploads/2025/03/gmail-thumbnail.png" alt="البريد">
+    </a>
+  </div>
+</header>
+
+
+<section class="visa-section": id="visa-section">
+
+  <div class="section-header">
+    <h2>🛂   فيزا الشنغن </h2>
+    <div class="flag-circle">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="علم الاتحاد الأوروبي">
+    </div>
+  </div>
+  <button onclick="toggle('visaDetails')">عرض التفاصيل</button>
+<h2> معلومات حول تأشيرة الشنغن  :</h2>
+  <div id="visaDetails"class="details-box" style="display:none; margin-top:10px;">
+<h2>1. متطلبات فيزا ايطاليا:</h2>
+    <ul>
+      <li>تأييد عمل.</li>
+      <li>كشف حساب بنكي لآخر 6 أشهر.</li>
+      <li>جواز سفر صالح لمدة لا تقل عن 6 أشهر.</li>
+      <li>سند ملكية عقار.</li>
+      <li>سنة سيارة أو ما يثبت امتلاكها.</li>
+      <li>حجز فندقي مبدئي.</li>
+      <li>حجز طيران مبدئي.</li>
+      <li>تأمين صحي للسفر.</li>
+      <li>خطة سير الرحلة.</li>
+    </ul>
+    <p style="color:gold;">📌 هذه المتطلبات تنطبق على جميع دول منطقة شنغن.</p>
+
+  </div>
+</section>
+
+<section class="visa-turkey" :="" id="visa-turkey">
+
+  <div class="section-header">
+    <h2>🛂 فيزا تركيا</h2>
+    <div class="flag-circle">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/250px-Flag_of_Turkey.svg.png" alt="علم تركيا
+">
+    </div>
+  </div>
+  <button onclick="toggle('visaturkeyDetails')">عرض التفاصيل</button>
+<h2>معلومات حول تأشيرة تركيا:</h2>
+
+  <div id="visaturkeyDetails" class="details-box" style="display: none; margin-top: 10px;">
+
+    <ul>
+<h2>تأيد عمل :</h2>
+      <li>اذا جنت موضف تجيب استمرارية عمل مع هوية الوضيفة مالتك 
+
+و اذا تاجر تجيب السجل التجاري مع غرفة التجارة و شهادة التجارة اذا جانت عندك 
+
+و اذا تشتغل بشركة لازم تجيب منهم تأييد استمرارية عمل مع سجل ابشركة و اوراق الشركة</li>
+<h2>كشف حساب (كشف الحساب تقويه للملف وليس شرط اساسي) :</h2>
+      <li>حساب بنكي متحرك بمدة 6 اشهر او3 اشهر او مرا واحده بمبلغ  5000$.</li>
+<h2>جواز سفر :</h2>
+      <li>جواز سفر صالح لمدة لا تقل عن 6 أشهر.</li>
+<h2>سند ملكية عقار  :</h2>
+      <li>ا كان عندك بيت تجيب الهم سند البيت حتى لو مو بأسمك بسم اهلك ابوك او امك او حتى لو الاخوة 
+
+السيارة تجيب الهم سنوية السيارة مع اجازة السوق.</li>
+
+<h2>متطلبات اضافيه   :</h2>
+      <li>و اخر شي خطة السفر 
+تجهز طيرانك ذهاب و اياب
+و حجز الفندقي
+و الاماكن السياحية الي راح تزورها 
+
+يعني مثلاً تكللهم اريد اروح 7 ايام سياحة التركيا
+تحجز الطيران ؏ـلى هذا الاساس طيارة الذهاب اول يوم و الاياب باليوم السابع 
+
+حجزت الفندق مثلاً تكللهم اريد اروح 3 ايام لروما و 3 ايام بمدينة البندقية 
+كون حجوزاتك الفندقية تصير بهل المكانين
+
+خطة السفر تكللهم مثلاً اريد اشوف متحف الكذا و معلم الكذا و ازور شلالات الكذا 
+كون تسوي زيارتك حسب المدن الي بيهن الحجز الفندقي 
+و ركز ؏ـلى المواعيد يعني ديربالك تحجز مثلاً لمتحف و هوة بهذا اليوم بي مغلق عدهم عطلة 
+هاي النقطة كون تنتبهلها كلش زين.</li>
+    
+    </ul>
+    
+  </div>
+</section>
+
+<section id="migration">
+  <div class="section-header">
+    <h2>🌍 الهجرة الشرعية</h2>
+    <div class="flag-circle">
+      <img src="https://www.europarabct.com/wp-content/uploads/2018/06/%D8%B5%D9%88%D8%B1-%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%A7%D9%86%D9%8A%D8%A7-2-450x281.jpg"علم كندا">
+    </div>
+  </div>
+  <button onclick="toggle('migrationDetails')">عرض التفاصيل</button>
+<h2>معلومات حول التكوين المهني :</h2>
+  <div id="migrationDetails"class="details-box" style="display:none; margin-top:10px;">
+    <ul>
+      <li>🎓 هو نظام تعليمي عملي يجمع بين الدراسة في مدرسة مهنية والعمل في شركة بنفس الوقت (مدة 2–3.5 سنوات).</a></li>
+      <li>💶 تتقاضى راتب شهري أثناء التدريب (حوالي 800–1400 يورو).</a></li>
+      <li>🗣️ يتطلب لغة ألمانية مستوى B1 وشهادة دراسية (غالبًا ثانوية أو متوسطة).</li>
+      <li>🇩🇪 بعد التخرج تحصل على شهادة رسمية تؤهلك للعمل أو الإقامة الدائمة في ألمانيا.</a></li>
+  <li> رابط التكوين المهني في ألمانيا – 
+        <a href="https://www.make-it-in-germany.com/en/" target="_blank">زيارة الموقع</a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="training">
+<div class="section-header">
+  <h2>التدريب </h2>
+  <div class="flag-circle">
+    <img src="https://png.pngtree.com/thumb_back/fh260/background/20241224/pngtree-a-compass-rests-on-an-old-map-symbolizing-exploration-and-adventure-image_16833042.jpg"خريطة أوروبا (مسار)">
+  </div>
+</div>
+
+   
+    <button class="toggle" onclick="toggle('trainingDetails')">عرض التفاصيل</button>
+<h2>معلومات حول الهجرة الغير شرعية:</h2>
+    <div id="trainingDetails"class="details-box" style="display:none; margin-top:8px; text-align:right;">
+      <ul>
+        <li>أولاً: استخراج فيزا تركيا.<button onclick="toggle('visaturkeyDetails'); scrollToSection('visa-turkey');"> عرض تفاصيل الفيزا </button>  </button>
+    
+</button>
+
+</p>
+</li>
+        <li>ثانياً: بعد الوصول إلى تركيا عليك البحث عن شخص يساعدك بالعبور إلى اليونان عن طريق البحر.</li>
+        <li>ثالثاً: بعد الوصول إلى اليونان عليك تقديم اللجوء فيها وانتظر الرد. إذا تم القبول وحصلت على الإقامة يمكنك إكمال طريقك إلى داخل أوروبا عبر الطيران بصورة رسمية.</li>
+        <li>رابعاً: إذا تم رفض طلب لجوئك في اليونان هناك طريقان:
+          <ul>
+            <li>أ. طريق الجواز الشبيه.</li>
+            <li>ب. طريق البر مروراً بالبانيا والجبل الأسود والبوسنة والهرسك وكرواتيا وسلوفينيا وإيطاليا وسويسرا وألمانيا.</li>
+          </ul>
+        </li>
+        <li>خامساً: هناك طرق برية من تركيا:
+          <ul>
+            <li>أ. طريق بلغاريا برًا من خلال الغابات، الانطلاق غالبًا من مدينة كرككلي باتجاه بلغاريا، ثم تقطيع السياج الحدودي والسير عبر الغابات حتى صوفيا، ومن بعدها إلى صربيا ثم البوسنة والهرسك وكرواتيا وسلوفينيا وإيطاليا وألمانيا.</li>
+            <li>ب. طريق اليونان برًا من خلال الغابات، هذا الطريق خطر ومتوقف حاليًا ولا يوجد منه عبور.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+<section id="cases" class="cases-section">
+  <div class="section-header">
+    <h2>💼 الكيسات</h2>
+
+    <div class="flag-circle">
+      <img src="https://png.pngtree.com/png-vector/20190406/ourmid/pngtree-doc-file-document-icon-png-image_913809.jpg" alt="علم الولايات المتحدة">
+    </div>
+
+    <button onclick="toggle('casesDetails')">عرض التفاصيل</button>
+
+    <h3>معلومات حول الكيسات :</h3>
+
+    <div id="casesDetails" class="details-box" style="display:none; margin-top:10px;">
+<h2>1. كيس البدون:</h2>
+      <ul>
+        <li>الآن نوفر لكم كيس البدون فقط.</li>
+        <li>نظراً لحجم الكيسات سوف نرفق لكم رابط قناة التلكرام الخاصة بالكيسات 👇</li>
+        <li>
+          <a href="https://t.me/+wbCU8AEByss1MzIy" target="_blank" style="color:#00aced; font-weight:bold; text-decoration:none;">
+            🔗 انضم إلى قناة الكيسات على التلغرام
+          </a>
+        </li>
+        <li>الوثائق المطلوبة، طريقة التقديم، وخطوات القبول.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="lottery">
+  <div class="section-header">
+  <h2>🇺🇸 اللوتري الأمريكي</h2>
+  <div class="flag-circle">
+    <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="علم الولايات المتحدة">
+  </div>
+</div>
+  <button class="toggle" onclick="toggle('lotteryDetails')">عرض التفاصيل</button>
+<h2>معلومات حول القرعة العشوائية:</h2>
+  <div id="lotteryDetails"class="details-box" style="display:none; margin-top:8px; text-align:right;">
+    <p class="muted">برنامج الهجرة العشوائية إلى الولايات المتحدة (DV Lottery) هو برنامج سنوي تنظمه وزارة الخارجية الأمريكية يمنح فرصة للحصول على الإقامة الدائمة (البطاقة الخضراء – Green Card) لعدد محدود من المتقدمين من مختلف الدول.</p>
+    <ul>
+      <li><strong>موعد التقديم:</strong> عادةً يُفتح التسجيل سنوياً في شهر أكتوبر ويستمر حتى أوائل نوفمبر.</li>
+      <li><strong>شروط الأهلية:</strong>
+        <ul>
+          <li>أن تكون من دولة مؤهلة (غير مستبعدة من البرنامج).</li>
+          <li>امتلاك شهادة الثانوية العامة أو ما يعادلها، أو خبرة عمل سنتين في مجال مؤهل.</li>
+          <li>تعبئة الطلب الإلكتروني بدقة بدون أي أخطاء.</li>
+        </ul>
+      </li>
+      <li><strong>طريقة التقديم:</strong> التسجيل إلكتروني فقط عبر الموقع الرسمي دون أي رسوم.</li>
+      <li><strong>نتائج القرعة:</strong> تُعلن النتائج عادة في شهر مايو من العام التالي.</li>
+      <li><strong>تحذير:</strong> احذر من المواقع أو الوسطاء الذين يطلبون المال — التسجيل مجاني تماماً.</li>
+      <li><strong>الموقع الرسمي للتقديم:</strong><br>
+        <a class="link" href="https://dvprogram.state.gov" target="_blank" rel="noopener">https://dvprogram.state.gov</a>
+      </li>
+    </ul>
+    <p class="muted">نصيحة: احتفظ برقم التأكيد بعد التسجيل ولا تشارك به مع أي شخص.
+
+
+
+  <meta charset="utf-8"><html lang="ar" dir="rtl">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>نموذج اللوتري — عربي / English</title>
+ <style>
+    .container{max-width:900px;margin:0 auto;background:var(--card);padding:18px;border-radius:10px;box-shadow:0 8px 24px rgba(11,32,70,0.06)}
+    h1{margin:0 0 12px;font-size:1.rem;text-align:center}
+    p.lead{color:var(--muted);margin:6px 0 16px;text-align:center}
+    form .field{display:bloc<!doctype html>
+k;margin-bottom:14px}
+    .label{font-weight:700;margin-bottom:6px}
+    .label small{display:block;font-weight:400;color:var(--muted);font-size:1rem}
+    input[type=text], input[type=tel], input[type=email], select, textarea, input[type=number], input[type=date]{width:80%;padding:10px;border:1px solid #e6e9ef;border-radius:8px;font-size:0.92rem}
+    .inline{display:flex;gap:8px}
+    .inline > *{flex:1}
+    .inline .small{flex:0.6}
+    .hint{font-size:0.50rem;color:var(--muted)}
+    .optional{font-size:0.90rem;color:#6b7280;margin-top:4px}
+    .radio-group, .checkbox-group{display:flex;flex-wrap:wrap;gap:10px}
+    .radio-group label, .checkbox-group label{display:flex;align-items:center;gap:6px;background:#f3f6ff;padding:8px 10px;border-radius:8px;color: #000;}
+    button{color:#fff;padding:10px 14px;border:none;border-radius:8px;font-weight:700;cursor:pointer}
+    @media (max-width:720px){.inline{flex-direction:column}}
+    /* small visual separators */
+    .sep{height:1px;background:#eef2ff;margin:14px 0;border-radius:2px}
+    label .en{display:block;font-weight:500;color:#007bff;font-size:0.85rem}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>نموذج اللوتري  </h1>
+    <p class="lead"> (استمارة تعليميه غير رسميه )<br></p>
+
+    <form id="dvForm" novalidate>
+
+      <!-- 1: الاسم (First / Last / Middle) -->
+      <div class="field">
+        <label class="label">1. الاسم — Name
+         
+        </label>
+        <div class="inline">
+          <input name="first_name" type="text" placeholder="الاسم الأول — First name" required>
+          <input name="last_name" type="text" placeholder="اسم العائلة — Last name" required>
+          <input name="middle_name" type="text" placeholder="الاسم الأوسط —  (اختياري)">
+        </div>
+        <div class="optional">اختياري — Middle name is optional</div>
+      </div>
+
+      <div class="sep"></div>
+
+      <!-- 2: الجنس -->
+      <div class="field">
+        <label class="label">2. الجنس — Gender
+          <small>اختر ذكر أو أنثى — Select Male or Female</small>
+        </label>
+        <div class="radio-group" role="radiogroup" aria-label="Gender">
+          <label><input type="radio" name="gender" value="male"> <span class="en">ذكر — Male</span></label>
+          <label><input type="radio" name="gender" value="female"> <span class="en">أنثى — Female</span></label>
+        </div>
+      </div>
+
+      <div class="sep"></div>
+
+      <!-- 3: تاريخ الميلاد -->
+      <div class="field">
+        <label class="label">3. تاريخ الميلاد — Date of birth
+          <small>شهر / Month — يوم / Day — سنة / Year</small>
+        </label>
+        <div class="inline">
+          <select name="birth_month">
+            <option value="">شهر — Month</option>
+            <option value="1">1 — January</option>
+            <option value="2">2 — February</option>
+            <option value="3">3 — March</option>
+            <option value="4">4 — April</option>
+            <option value="5">5 — May</option>
+            <option value="6">6 — June</option>
+            <option value="7">7 — July</option>
+            <option value="8">8 — August</option>
+            <option value="9">9 — September</option>
+            <option value="10">10 — October</option>
+            <option value="11">11 — November</option>
+            <option value="12">12 — December</option>
+          </select>
+          <input name="birth_day" type="number" min="1" max="31" placeholder="يوم — Day">
+          <input name="birth_year" type="number" min="1900" max="2100" placeholder="سنة — Year">
+        </div>
+      </div>
+
+      <div class="sep"></div>
+
+      <!-- 4: مدينة الميلاد -->
+      <div class="field">
+        <label class="label">4. مدينة الميلاد — City of birth
+          <small>اكتب اسم المدينة كما في الوثائق — Enter city as in passport</small>
+        </label>
+        <input name="birth_city" type="text" placeholder="المدينة — City" required>
+      </div>
+
+      <div class="sep"></div>
+
+      <!-- 5: دولة الميلاد (الدول العربية فقط) -->
+      <div class="field">
+        <label class="label">5. دولة الميلاد — Country of birth (Arab countries only)
+          <small>حدد الدوله </small>
+        </label>
+        <select name="birth_country">
+          <option value="">اختر دولة — Select country</option>
+          <option>الجزائر — Algeria</option>
+          <option>البحرين — Bahrain</option>
+          <option>جزر القمر — Comoros</option>
+          <option>جيبوتي — Djibouti</option>
+          <option>مصر — Egypt</option>
+          <option>العراق — Iraq</option>
+          <option>الأردن — Jordan</option>
+          <option>الكويت — Kuwait</option>
+          <option>لبنان — Lebanon</option>
+          <option>ليبيا — Libya</option>
+          <option>موريتانيا — Mauritania</option>
+          <option>المغرب — Morocco</option>
+          <option>عمان — Oman</option>
+          <option>فلسطين — Palestine</option>
+          <option>قطر — Qatar</option>
+          <option>السعودية — Saudi Arabia</option>
+          <option>الصومال — Somalia</option>
+          <option>السودان — Sudan</option>
+          <option>سوريا — Syria</option>
+          <option>تونس — Tunisia</option>
+          <option>الإمارات — United Arab Emirates</option>
+          <option>اليمن — Yemen</option>
+        </select>
+      </div>
+
+      <div class="sep"></div>
+
+      <!-- 6: بلد الأهلية (عادة بلد الميلاد) -->
+      <div class="field">
+        <label class="label">6. بلد الأهلية — Country of eligibility (usually country of birth)
+          <small>هل اختيار بلد الأهلية بناءً على بلد الميلاد؟ — Is eligibility country same as country of birth?</small>
+        </label>
+        <div class="radio-group">
+          <label><input type="radio" name="elig_same" value="yes"> نعم — Yes</label>
+          <label><input type="radio" name="elig_same" value="no"> لا — No</label>
+        </div>
+        <div class="hint" style="margin-top:8px">إذا اخترت "لا" — حدد بلد الأهلية من القائمة الشاملة أدناه — If No, choose eligibility country from the full list below</div>
+        <select name="elig_country" style="margin-top:8px">
+          <option value="">اختر بلد الأهلية — Select eligibility country</option>
+          <!-- كامل قائمة الدول مضمّنة أدناه -->
+          <option>Afghanistan</option>
+          <option>Albania</option>
+          <option>Algeria</option>
+          <option>Andorra</option>
+          <option>Angola</option>
+          <option>Antigua and Barbuda</option>
+          <option>Argentina</option>
+          <option>Armenia</option>
+          <option>Australia</option>
+          <option>Austria</option>
+          <option>Azerbaijan</option>
+          <option>Bahamas</option>
+          <option>Bahrain</option>
+          <option>Bangladesh</option>
+          <option>Barbados</option>
+          <option>Belarus</option>
+          <option>Belgium</option>
+          <option>Belize</option>
+          <option>Benin</option>
+          <option>Bhutan</option>
+          <option>Bolivia</option>
+          <option>Bosnia and Herzegovina</option>
+          <option>Botswana</option>
+          <option>Brazil</option>
+          <option>Brunei</option>
+          <option>Bulgaria</option>
+          <option>Burkina Faso</option>
+          <option>Burundi</option>
+          <option>Cabo Verde</option>
+          <option>Cambodia</option>
+          <option>Cameroon</option>
+          <option>Canada</option>
+          <option>Central African Republic</option>
+          <option>Chad</option>
+          <option>Chile</option>
+          <option>China</option>
+          <option>Colombia</option>
+          <option>Comoros</option>
+          <option>Costa Rica</option>
+          <option>Croatia</option>
+          <option>Cuba</option>
+          <option>Cyprus</option>
+          <option>Czech Republic</option>
+          <option>Democratic Republic of the Congo</option>
+          <option>Denmark</option>
+          <option>Djibouti</option>
+          <option>Dominica</option>
+          <option>Dominican Republic</option>
+          <option>Ecuador</option>
+          <option>Egypt</option>
+          <option>El Salvador</option>
+          <option>Equatorial Guinea</option>
+          <option>Eritrea</option>
+          <option>Estonia</option>
+          <option>Eswatini</option>
+          <option>Ethiopia</option>
+          <option>Fiji</option>
+          <option>Finland</option>
+          <option>France</option>
+          <option>Gabon</option>
+          <option>Gambia</option>
+          <option>Georgia</option>
+          <option>Germany</option>
+          <option>Ghana</option>
+          <option>Greece</option>
+          <option>Grenada</option>
+          <option>Guatemala</option>
+          <option>Guinea</option>
+          <option>Guinea-Bissau</option>
+          <option>Guyana</option>
+          <option>Haiti</option>
+          <option>Honduras</option>
+          <option>Hungary</option>
+          <option>Iceland</option>
+          <option>India</option>
+          <option>Indonesia</option>
+          <option>Iran</option>
+          <option>Iraq</option>
+          <option>Ireland</option>
+          <option>Israel</option>
+          <option>Italy</option>
+          <option>Ivory Coast</option>
+          <option>Jamaica</option>
+          <option>Japan</option>
+          <option>Jordan</option>
+          <option>Kazakhstan</option>
+          <option>Kenya</option>
+          <option>Kiribati</option>
+          <option>Kuwait</option>
+          <option>Kyrgyzstan</option>
+          <option>Laos</option>
+          <option>Latvia</option>
+          <option>Lebanon</option>
+          <option>Lesotho</option>
+          <option>Liberia</option>
+          <option>Libya</option>
+          <option>Liechtenstein</option>
+          <option>Lithuania</option>
+          <option>Luxembourg</option>
+          <option>Madagascar</option>
+          <option>Malawi</option>
+          <option>Malaysia</option>
+          <option>Maldives</option>
+          <option>Mali</option>
+          <option>Malta</option>
+          <option>Marshall Islands</option>
+          <option>Mauritania</option>
+          <option>Mauritius</option>
+          <option>Mexico</option>
+          <option>Micronesia</option>
+          <option>Moldova</option>
+          <option>Monaco</option>
+          <option>Mongolia</option>
+          <option>Montenegro</option>
+          <option>Morocco</option>
+          <option>Mozambique</option>
+          <option>Myanmar</option>
+          <option>Namibia</option>
+          <option>Nauru</option>
+          <option>Nepal</option>
+          <option>Netherlands</option>
+          <option>New Zealand</option>
+          <option>Nicaragua</option>
+          <option>Niger</option>
+          <option>Nigeria</option>
+          <option>North Korea</option>
+          <option>North Macedonia</option>
+          <option>Norway</option>
+          <option>Oman</option>
+          <option>Pakistan</option>
+          <option>Palau</option>
+          <option>Panama</option>
+          <option>Papua New Guinea</option>
+          <option>Paraguay</option>
+          <option>Peru</option>
+          <option>Philippines</option>
+          <option>Poland</option>
+          <option>Portugal</option>
+          <option>Qatar</option>
+          <option>Republic of the Congo</option>
+          <option>Romania</option>
+          <option>Russia</option>
+          <option>Rwanda</option>
+          <option>Saint Kitts and Nevis</option>
+          <option>Saint Lucia</option>
+          <option>Saint Vincent and the Grenadines</option>
+          <option>Samoa</option>
+          <option>San Marino</option>
+          <option>Sao Tome and Principe</option>
+          <option>Saudi Arabia</option>
+          <option>Senegal</option>
+          <option>Serbia</option>
+          <option>Seychelles</option>
+          <option>Sierra Leone</option>
+          <option>Singapore</option>
+          <option>Slovakia</option>
+          <option>Slovenia</option>
+          <option>Solomon Islands</option>
+          <option>Somalia</option>
+          <option>South Africa</option>
+          <option>South Korea</option>
+          <option>South Sudan</option>
+          <option>Spain</option>
+          <option>Sri Lanka</option>
+          <option>Sudan</option>
+          <option>Suriname</option>
+          <option>Sweden</option>
+          <option>Switzerland</option>
+          <option>Syria</option>
+          <option>Taiwan</option>
+          <option>Tajikistan</option>
+          <option>Tanzania</option>
+          <option>Thailand</option>
+          <option>Timor-Leste</option>
+          <option>Togo</option>
+          <option>Tonga</option>
+          <option>Trinidad and Tobago</option>
+          <option>Tunisia</option>
+          <option>Turkey</option>
+          <option>Turkmenistan</option>
+          <option>Tuvalu</option>
+          <option>Uganda</option>
+          <option>Ukraine</option>
+          <option>United Arab Emirates</option>
+          <option>United Kingdom</option>
+          <option>United States</option>
+          <option>Uruguay</option>
+          <option>Uzbekistan</option>
+          <option>Vanuatu</option>
+          <option>Vatican City</option>
+          <option>Venezuela</option>
+          <option>Vietnam</option>
+          <option>Yemen</option>
+          <option>Zambia</option>
+          <option>Zimbabwe</option>
+        </select>
+      </div>
+
+      <div class="sep"></div>
+
+      <!-- 7: الصورة الشخصية -->
+      <div class="field">
+        <label class="label">7. الصورة الشخصية — Personal photo
+          <small>الرجاء اتباع شروط الصورة: خلفية فاتحة، وجه واضح، لا نظارات، أبعاد محددة حسب متطلبات اللوتري — Please follow photo rules: light background, full face, no glasses, exact dimensions per lottery rules</small>
+        </label>
+        <input type="file" name="photo" accept="image/*">
+        <div class="hint">مثال: JPG 600x600 px (تحقق من المواصفات الرسمية قبل الإرسال) — Example: JPG 600x600 px</div>
+      </div>
+
+      <div class="sep"></div>
+
+      <!-- 8: العنوان البريدي (7 خانات) -->
+      <div class="field">
+        <label class="label">8. العنوان البريدي — Mailing address
+          <small>هذا الحقل يكون اختياري — This field is optional</small>
+        </label>
+        <div class="inline">
+          <input name="addr_line1" type="text" placeholder="العنوان - السطر الأول / Address - Line 1">
+        </div>
+        <div class="inline" style="margin-top:8px">
+          <input name="addr_line2" type="text" placeholder="العنوان - السطر الثاني (اختياري) / Address - Line 2 (Optional)">
+        </div>
+        <div class="inline" style="margin-top:8px">
+          <input name="addr_city" type="text" placeholder="المدينة - Town / City">
+          <input name="addr_state" type="text" placeholder="المنطقة - State / Province">
+        </div>
+        <div class="inline" style="margin-top:8px">
+          <input name="addr_postal" type="text" placeholder="الرمز البريدي / Postal code">
+          <select name="addr_country">
+            <option value="">اختر الدولة — Select country</option>
+            <!-- أعادة استخدام القائمة الكاملة -->
+            <option>United States</option>
+            <option>United Kingdom</option>
+            <option>Canada</option>
+            <option>Australia</option>
+            <option>Germany</option>
+            <option>France</option>
+            <option>India</option>
+            <option>China</option>
+            <option>Japan</option>
+            <option>Egypt</option>
+            <option>Saudi Arabia</option>
+            <option>Iraq</option>
+            <option>United Arab Emirates</option>
+            <option>... (القائمة الكاملة مضمّنة في القائمة الأخرى أعلاه)</option>
+          </select>
+        </div>
+        <div class="optional">ملاحظة: عليك ادخال المعلومات بصورة صحيحه </div>
+      </div>
+
+      <div class="sep"></div>
+
+      <!-- 9: أين تسكن حاليا -->
+      <div class="field">
+        <label class="label">9. أين تسكن حالياً — Current residence
+          <small>اختر الدولة التي تقيم فيها حالياً — Select the country where you currently live</small>
+        </label>
+        <select name="current_country">
+          <option value="">اختر الدولة — Select country</option>
+          <!-- قائمة مختصرة — يمكنك استبدالها بالقائمة الكاملة عند الطلب -->
+          <option>Iraq</option>
+          <option>United States</option>
+          <option>United Kingdom</option>
+          <option>Saudi Arabia</option>
+          <option>United Arab Emirates</option>
+          <option>Canada</option>
+          <option>Germany</option>
+          <option>France</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="sep"></div>
+
+      <!-- 10: رقم الهاتف -->
+      <div class="field">
+        <label class="label">10. رقم الهاتف — Phone number
+          <small>اكتب رقم الهاتف — Enter phone number</small>
+        </label>
+        <input name="phone" type="tel" placeholder="+964 770 000 0000">
+        <div class="optional">اختياري — Optional</div>
+      </div>
+
+      <div class="sep"></div>
+
+      <!-- 11: البريد الإلكتروني مرتين -->
+      <div class="field">
+        <label class="label">11. البريد الإلكتروني — Email
+          <small>البريد الإلكتروني / Email — تأكيد البريد الإلكتروني / Confirm email</small>
+        </label>
+        <input name="email" type="email" placeholder="البريد الإلكتروني — Email" required>
+        <input name="email_confirm" type="email" placeholder="تأكيد البريد الإلكتروني — Confirm email" style="margin-top:8px" required>
+      </div>
+
+      <div class="sep"></div>
+
+      <!-- 12: التحصيل الدراسي -->
+      <div class="field">
+        <label class="label">12. التحصيل الدراسي — Education
+          <small>اختر أعلى مستوى تعليمي لديك — Select highest level of education</small>
+        </label>
+        <div class="radio-group">
+          <label><input type="radio" name="education" value="primary"> الابتدائية — Primary</label>
+          <label><input type="radio" name="education" value="middle"> الإعدادية — Middle</label>
+          <label><input type="radio" name="education" value="high_school"> الثانوية — High school</label>
+          <label><input type="radio" name="education" value="vocational"> تعليم مهني — Vocational</label>
+          <label><input type="radio" name="education" value="bachelor"> بكالوريوس — Bachelor</label>
+          <label><input type="radio" name="education" value="master"> ماجستير — Master</label>
+          <label><input type="radio" name="education" value="phd"> دكتوراه أو أعلى — PhD or higher</label>
+        </div>
+      </div>
+
+      <div class="sep"></div>
+0
+      <!-- 13: الحالة الاجتماعية -->
+      <div class="field">
+        <label class="label">13. الحالة الاجتماعية — Marital status</label>
+        <div class="radio-group">
+          <label><input type="radio" name="marital" value="single"> أعزب — Single</label>
+          <label><input type="radio" name="marital" value="married_nonus"> متزوج من شخص ليس أميركياً — Married to non‑US citizen</label>
+          <label><input type="radio" name="marital" value="married_us"> متزوج من شخص أميركي / حامل green card — Married to US citizen/green‑card holder</label>
+          <label><input type="radio" name="marital" value="divorced"> مطلق — Divorced</label>
+          <label><input type="radio" name="marital" value="widowed"> أرمل — Widowed</label>
+          <label><input type="radio" name="marital" value="separated"> منفصل رسمياً — Separated (not divorced)</label>
+        </div>
+      </div>
+
+      <div class="sep"></div>
+
+      <!-- 14: عدد الأطفال -->
+      <div class="field">
+        <label class="label">14. عدد الأطفال — Number of children
+          <small>اكتب عدد أطفالك من زواجك الحالي وزواجك السابق. اذكر أيضاً أطفال زوجتك من زواج سابق.</small>
+        </label>
+        <input name="children_count" type="number" min="0" placeholder="عدد الأطفال — Number of children">
+        <div class="hint">يرجى ذكر جميع الأطفال المولودين من زواجك الحالي أو السابق، وأيضاً أطفال الزوج/الزوجة من زيجات سابقة.</div>
+      </div>
+
+      <div style="text-align:center;margin-top:18px">
+        <button type="submit">حفظ / Submit</button>
+      </div>
+
+    </form>
+
+    <p class="hint" style="margin-top:12px">الاستمارة غير رسمية / النموذج تعليمي فقط </p>
+  </div>
+
+  <script>
+    // بسيط: منع الإرسال التجريبي وإظهار المحتوى في الكونسول
+    document.getElementById('dvForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const data = new FormData(this);
+      console.log('Form submit preview:');
+      for(const [k,v] of data.entries()) console.log(k, v);
+      alert('تم حفظ البيانات محلياً (معاينة). أطلب مني إضافة تحقق أو ربط بخادم إذا رغبت.');
+    });
+  </script>
+</body>
+</html>
+
+
+ </div>
+</section>
+
+
+<section id="scammers">
+<div class="section-header">
+  <h2>اسماء النصابين</h2>
+  <div class="flag-circle">
+ <a href="https://ibb.co/xKWBCdFH"><img src="https://i.ibb.co/dsFVWxmg/photo-2025-11-02-00-27-22.jpg" alt="photo-2025-11-02-00-27-22" border="0"></a></a>خريطة أوروبا (مسار)">
+  </div>
+</div>
+
+  <button onclick="toggle('scammersDetails')">عرض النصّابين</button>
+<h2>اسماء المهربين القفاصة:</h2>
+  <div id="scammersDetails"class="details-box" style=display:none; margin-top: 10px;">
+   
+  <ul style="margin-top:10px; line-height:1.8;">
+    <li>1. مصطفى برلين — <span style="color:red;">نصّاب</span></li>
+    <li>2. عمر يالجين — <span style="color:red;">نصّاب</span></li>
+    <li>3. مصطفى ستار — <span style="color:red;">نصّاب</span></li>
+    <li>4. محمد العراقي — <span style="color:red;">نصّاب</span></li>
+    <li>5. أبو علي السويدي — <span style="color:red;">نصّاب</span></li>
+    <li>6. شاليش — <span style="color:red;">نصّاب</span></li>
+    <li>7. أبو جبل — <span style="color:red;">نصّاب</span></li>
+    <li>8. أبو حسن — <span style="color:red;">نصّاب</span></li>
+    <li>9. أبو حسين — <span style="color:red;">نصّاب</span></li>
+    <li>10. البارون — <span style="color:red;">نصّاب</span></li>
+  <!--عم--></ul></div>
+</section>
+
+<form id="contactForm" style="max-width:480px;margin:20px auto;padding:16px;background:rgba(0,0,0,0.45);border-radius:10px;color:#fff;">
+  <label for="name"></label>
+<h2>الاسم الكامل :</h2>
+  <input type="text" id="name" placeholder="اكتب اسمك هنا" required style="width:90%;padding:8px;border-radius:6px;margin:6px 0">
+
+  <label for="telegram"></label>
+<h2>اترك معرف حسابك على تلكرام للاجابه على سؤال</h2>
+  <input type="text" id="telegram" placeholder="@username" required style="width:90%;padding:8px;border-radius:6px;margin:6px 0">
+
+  <label for="message"></label>
+<h2>اترك سؤالك هنا </h2>
+  <textarea id="message" placeholder="اكتب رسالتك هنا..." required style="width:90%;padding:8px;border-radius:6px;margin:6px 0;height:55px"></textarea>
+
+  <button type="submit" style="background:#007BFF;color:#fff;border:none;padding:10px 14px;border-radius:8px;cursor:pointer">إرسال</button>
+
+  <p id="status" style="margin-top:10px;color:#ffd700"></p>
+</form>
+
+
+<section id="socials" style="text-align:center;margin-top:25px;">
+<!-- روابط -->
+<div id="socialsBotn"><a href="https://www.tiktok.com/@qr_cc2" target="_blank">📱 قناة التيك توك</a></div>
+<div id="socialsBotn"><a href="https://t.me/hxhhxgddhh" target="_blank">📱 قناة التلجرام</a></div>
+<!-- رسالة  -->
+<div style="font-weight:900;margin-top: 10px;">
+هناك بثوث يومية على قناة التيك توك وقناة التلكرام للاجابة عن جميع اسئلتكم 
+</div>
+<style>
+#socialsBotn {
+ margin: 7px;
+ display: inline-block;
+ background-color: #0088cc;
+ color: white;
+ padding: 5px 5px;
+ border-radius: 10px;
+ text-decoration: none;
+ font-size: 20px;
+ font-weight: bold; }
+#socialsBotn a { color: white; }
+</style>
+</section>
+
+
+
+
+
+<footer>
+  <p>حقوق التطبيق محفوظة © أبو الحسن</p>
+  <p>كروب نصائح لجوء وسفر حول العالم</p>
+</footer>
+<script>
+function scrollToSection(id) {
+    const section = document.getElementById(id);
+    section.scrollIntoView({ behavior: "smooth" });
+}
+</script>
+<script>
+document.getElementById("contactForm").addEventListener("submit", async function(e){
+  e.preventDefault();
+
+  // اقرأ القيم مباشرة من الحقول
+  const name = (document.getElementById("name").value || "").trim();
+  let telegram = (document.getElementById("telegram").value || "").trim();
+  const message = (document.getElementById("message").value || "").trim();
+  const statusEl = document.getElementById("status");
+
+  // تصحيح بسيط لمعرفة هل الحقول مقروءة
+  console.log("DEBUG form values:", { name, telegram, message });
+
+  // تحقق سريع من القيم
+  if (!name) { statusEl.textContent = "يرجى كتابة الاسم."; return; }
+  if (!telegram) { statusEl.textContent = "يرجى كتابة معرف التلغرام."; return; }
+  if (!message) { statusEl.textContent = "يرجى كتابة الرسالة."; return; }
+
+  // تأكد أن المعرف يبدأ بـ @ — إن رغبت أضف @ تلقائياً
+  if (!telegram.startsWith("@")) telegram = "@" + telegram;
+
+  // ---------- ضع التوكن و الـ chat id هنا ----------
+  const TOKEN = "8529188988:AAHFIcPhJ1dbLKNh_WZXcPFlT6DfrZOGTSg";      // ← ضع توكن البوت هنا (من BotFather)
+  const CHAT_ID = "1710948560";      // ← ضع رقم الـ chat id هنا (مثال: 123456789 أو -1001234567890)
+  // ------------------------------------------------
+
+  if (TOKEN === "PUT_YOUR_BOT_TOKEN_HERE" || CHAT_ID === "PUT_YOUR_CHAT_ID_HERE") {
+    statusEl.textContent = "⚠️ لم تضف TOKEN أو CHAT_ID في الكود بعد.";
+    console.warn("TOKEN/CHAT_ID missing.");
+    return;
+  }
+
+  const text = `📩 رسالة جديدة من الموقع:\n👤 الاسم: ${name}\n🔗 معرف التلغرام: ${telegram}\n\n💬 الرسالة:\n${message}`;
+
+  const url = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+  try {
+    statusEl.textContent = "⏳ جارٍ الإرسال...";
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ chat_id: CHAT_ID, text, parse_mode: "HTML" })
+    });
+
+    const data = await res.json();
+    console.log("Telegram API response:", data);
+
+    if (res.ok && data.ok) {
+      statusEl.textContent = "✅ تم إرسال الرسالة بنجاح!";
+      this.reset();
+    } else {
+      statusEl.textContent = "❌ لم يتم الإرسال — تحقق من Console.";
+      console.error("Send failed:", data);
+    }
+  } catch (err) {
+    statusEl.textContent = "❌ خطأ في الاتصال. راجع Console.";
+    console.error("Fetch error:", err);
+  }
+});
+</script>
+<!-- 💫 تأثير شكل واحد متغير عند الضغط -->
+<script>
+document.addEventListener("click", function(e) {
+  // قائمة الأشكال الممكنة
+  const shapes = ["★", "❤", "✨", "⬤", "✦"];
+  const shape = shapes[Math.floor(Math.random() * shapes.length)];
+
+  // إنشاء العنصر
+  const el = document.createElement("span");
+  el.textContent = shape;
+  el.style.position = "fixed";
+  el.style.left = e.clientX + "px";
+  el.style.top = e.clientY + "px";
+  el.style.fontSize = "22px";
+  el.style.color = ["#FFD700","#FF69B4","#00BFFF","#ADFF2F","#FFA500"][Math.floor(Math.random()*5)];
+  el.style.pointerEvents = "none";
+  el.style.transition = "transform 1s ease-out, opacity 1s ease-out";
+  el.style.zIndex = "9999";
+  document.body.appendChild(el);
+
+  // حركة للأعلى واختفاء تدريجي
+  setTimeout(() => {
+    el.style.transform = "translateY(-60px) scale(0.6)";
+    el.style.opacity = "0";
+  }, 10);
+
+  // حذف العنصر بعد انتهاء التأثير
+  setTimeout(() => el.remove(), 1000);
+});
+</script>
+
+</body>
+</html>
